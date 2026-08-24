@@ -51,3 +51,7 @@ Different approaches are below for datawarehousing
 1. All primary keys in dimension tables must use the suffix _key.
 2. All technical columns must start with the prefix dwh_ followed by a descriptive name indicating the column's purpose.
 3. All stored procedures used for loading data must follow the naming pattern load_<layer>
+
+
+# Other misc info
+1. GO is just a command in SQL which tells the SQL Server to move to below command only after executing the above command fully.
