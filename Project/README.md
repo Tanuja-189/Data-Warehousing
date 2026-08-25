@@ -1,6 +1,4 @@
 This is the data warehousing project.
-Inspired from Data with Baraa SQL Data Warehouse from scratch.
-
 
 FIRST STEP IS TO DESIGN DATA ARCHITECUTE
 1. Choose Data Management approach -> Chose the Data Warehousing and Kimball method
