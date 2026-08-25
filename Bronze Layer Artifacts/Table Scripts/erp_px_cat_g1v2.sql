@@ -1,6 +1,6 @@
-IF OBJECT_ID('bronze.PX_CAT_G1V2','U') IS NOT NULL --U stands for user defined table
-	DROP TABLE bronze.PX_CAT_G1V2;
-CREATE TABLE bronze.PX_CAT_G1V2(
+IF OBJECT_ID('bronze.erp_PX_CAT_G1V2','U') IS NOT NULL --U stands for user defined table
+	DROP TABLE bronze.erp_PX_CAT_G1V2;
+CREATE TABLE bronze.erp_PX_CAT_G1V2(
 	ID NVARCHAR(50)
 	,CAT NVARCHAR(50)
 	,SUBCAT NVARCHAR(50)
