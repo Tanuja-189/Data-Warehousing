@@ -1,0 +1,9 @@
+IF OBJECT_ID('silver.erp_PX_CAT_G1V2','U') IS NOT NULL --U stands for user defined table
+	DROP TABLE silver.erp_PX_CAT_G1V2;
+CREATE TABLE silver.erp_PX_CAT_G1V2(
+	ID NVARCHAR(50)
+	,CAT NVARCHAR(50)
+	,SUBCAT NVARCHAR(50)
+	,MAINTENANCE NVARCHAR(50)
+	,dwh_create_date DATETIME2 DEFAULT GETDATE()
+)
