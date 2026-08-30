@@ -1,4 +1,5 @@
 ###### OBSERVATIONS FROM THE TABLES
+#### MAIN THING WITH SILVER LAYER IS CHECK IF ALL THE BUSINESS RULES ARE MET ON ALL THE TABLES
 
 1. In both customer and product tables we have both ids and keys.
 2. Keys can be same, but id is always unique.
@@ -21,4 +22,16 @@
 3. In order to resolve this ambiguity, we need to define the set of rules and follow them.
 4. End date being NULL is fine, but start date being NULL is not allowed at all.
 5. We might need to adjust the metadata of the table to satisfy the quality requirements for the data.
-6. 
+
+
+####
+1. We might also need to create derived columns sometimes as per requirements.
+2. We do data enrichment too i.e., by adding the relevant columns to the data to enhance the dataset for analysis.
+3. Also , need to validate with the date boundaries that we have in our business.
+4. Cannot convert from INT to DATE in SQL Server. First, we need to convert to VARCHAR and from there, convert to the DATE
+
+
+####
+1. sales_details have connection with other two table i.e., cust_info and prd_info because, they are dimension tables and this one is the facts table.
+2. Whenever we have data issues, it has to be either solved directly in source system or in the data warehouse. But need to discuss it with the business team to come to an understanding.
+3. 
