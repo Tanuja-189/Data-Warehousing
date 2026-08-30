@@ -13,3 +13,12 @@
 2. Next, we also check where we have trialing and leading spaces.
 3. Next, check the data consistency of the low cardinality columns in the tables.
 4. Document all the quality check queries ran on bronze and then run the same in Silver layer again to check if the discrepancies have resolved accordingly.
+
+
+## DATE TRANSFORMATIONS
+1. With dates we can encounter multiple issues like start date being greater than end date, end or start date being NULL.
+2. For a same product, we might have the overlapping dates.
+3. In order to resolve this ambiguity, we need to define the set of rules and follow them.
+4. End date being NULL is fine, but start date being NULL is not allowed at all.
+5. We might need to adjust the metadata of the table to satisfy the quality requirements for the data.
+6. 
