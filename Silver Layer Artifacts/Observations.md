@@ -37,3 +37,7 @@
 3. Once the load into silver table is done, do the quality checks as recon to make sure no problem is present in the transformations.
 4. Do transformations for every other column which is present and think in multiple ways.
 5. In silver table, also write the conditions or transformations by guessing in advance, like which might occur and what might happen.
+6. Similar to the stored procedure in the bronze, we can have a stored procedure to load the values into all the silver layer tables. (keeping all in single script, adding enhanced PRINT statements and time taken to calculate everything).
+7. Maintain consistency in logging, error handling. So that a standard will be set up.
+8. Detect outliers and define the rules in advance.
+9. 
