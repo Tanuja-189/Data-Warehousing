@@ -34,4 +34,6 @@
 ####
 1. sales_details have connection with other two table i.e., cust_info and prd_info because, they are dimension tables and this one is the facts table.
 2. Whenever we have data issues, it has to be either solved directly in source system or in the data warehouse. But need to discuss it with the business team to come to an understanding.
-3. 
+3. Once the load into silver table is done, do the quality checks as recon to make sure no problem is present in the transformations.
+4. Do transformations for every other column which is present and think in multiple ways.
+5. In silver table, also write the conditions or transformations by guessing in advance, like which might occur and what might happen.
