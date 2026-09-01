@@ -23,4 +23,6 @@
 11. Need to check while joining the tables, if same info is present in both of them. If so, then that need to be standardized.
 12. Make sure that surrogate keys of the dim tables are always present in the fact tables.
 13. In facts generally, we maintain all the surrogate keys from the dimensions first and then group other logical columns accordingly.
-14. 
+14. After defining the Star / Snowflake schema, also decide the relationship between the facts and dimensions like one-to-one, one-to-many and so on....
+15. Description for all the gold layer tables and columns would be more useful for the endusers downstream or someone dealing with these views and tables again.
+16. Maintaining quality checks also in the documentation would be more helpful.
