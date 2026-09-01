@@ -22,4 +22,5 @@
 10. We select new primary keys in this layer called as the surrogate keys.
 11. Need to check while joining the tables, if same info is present in both of them. If so, then that need to be standardized.
 12. Make sure that surrogate keys of the dim tables are always present in the fact tables.
-13. 
+13. In facts generally, we maintain all the surrogate keys from the dimensions first and then group other logical columns accordingly.
+14. 
